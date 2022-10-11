@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://mibenimages.s3.jp-tok.cloud-object-storage.appdomain.cloud/CSS-Image%20Gallery-Cloud%20Storage/image-gallery-style.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="img-container">
+        <img src="https://mibenimages.s3.jp-tok.cloud-object-storage.appdomain.cloud/dog1.jpg" alt="dog-1">
+        <img src="https://mibenimages.s3.jp-tok.cloud-object-storage.appdomain.cloud/images-dog/dog2.jpg" alt="dog-2">
+        <img src="https://mibenimages.s3.jp-tok.cloud-object-storage.appdomain.cloud/images-dog/dog3.jpg" alt="dog-3">
+        <img src="https://mibenimages.s3.jp-tok.cloud-object-storage.appdomain.cloud/images-dog/dog4.jpg" alt="dog-4">
+        <img src="https://mibenimages.s3.jp-tok.cloud-object-storage.appdomain.cloud/images-dog/dog5.jpg" alt="dog-5">
+        <img src="https://mibenimages.s3.jp-tok.cloud-object-storage.appdomain.cloud/dog-6.jpg" alt="dog-6">
+    </div>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "5eab48a8-0405-4f91-97eb-cfcc52b23755", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "3bb50dc4-040c-4097-b697-4646de168fbe", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+
+</body>
+</html>
