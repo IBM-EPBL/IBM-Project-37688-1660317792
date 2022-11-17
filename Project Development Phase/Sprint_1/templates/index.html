@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg bg-light ">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-1 text-success" href="/">MoneyLover</a>
+      <form class="ms-auto">
+            <button class="btn btn-outline-success me-3" type="button"><a href="/login"class="text-dark text-decoration-none" >Login</a></button>
+            <button class="btn btn-success" type="button"><a href="/signup" class="text-light text-decoration-none" >Sign Up</a></button>
+      </form>
+      </div>
+  </nav>
+  <main>
+    <div class="container d-flex flex-column justify-content-center align-items-center" style="width:100%; height:80vh">
+                <h2 class= "fw-bolder text-dark mb-3 text-center" style="font-size:3rem;">Managing money,<br> made simple</h2>
+                <p style="color:rgb(182, 174, 174);">Effortlessly track your cashflow and gain insights<br> that’ll help you see easy opportunities to save.</p>
+                <a href="/signup" class="text-light text-decoration-none" ><button class="btn btn-success btn-lg mt-4" type="button">Sign Up for Free</button></a>
+    </div>
+  </main>
+{% endblock %}
